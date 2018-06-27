@@ -75,6 +75,8 @@ class Post
         $stmt->execute();
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
+        return $row;
+
         // Set properties
         $this->title = $row['title'];
         $this->body = $row['body'];
